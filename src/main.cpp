@@ -32,8 +32,10 @@ void displayValues(){
   Voltage = (RawValue / 4096.0) * 3300; // sensoru besleyen kaynagin voltaji onemli
   Serial.print("adc value = " );        // adc value
   Serial.print(RawValue);
-  Serial.print("\t mili volts = ");    // shows the voltage measured
+  Serial.print("\n");
+  Serial.print("mili volts = ");    // shows the voltage measured
   Serial.print(Voltage,0);
+  Serial.print("\n");
   delay(300);
 
   display.clearDisplay();         // clear display
@@ -41,8 +43,13 @@ void displayValues(){
   display.setTextSize(1);         //set font size
   display.setCursor(0,0);         //set cursor coordinates
 
-  if (RawValue<limit)             // limitleme -degerle ilgilenilecek-
+  if (RawValue<limit){             // limitleme -degerle ilgilenilecek-
     display.print("NORMAL");
+    display.setCursor(0,10); 
+    display.print("raw value:"); 
+    display.print(RawValue);
+    display.print("\n");
+  }
   else {
     display.print("LEAK");
     display.setCursor(0,10); 
