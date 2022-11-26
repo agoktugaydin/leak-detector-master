@@ -29,10 +29,10 @@ void displayValues(){
   }
 
   RawValue = rawSum/500;
-  Voltage = (RawValue / 4096.0) * 3300;
-  Serial.print("Raw Value = " );        // adc value
+  Voltage = (RawValue / 4096.0) * 3300; // sensoru besleyen kaynagin voltaji onemli
+  Serial.print("adc value = " );        // adc value
   Serial.print(RawValue);
-  Serial.print("\t milli volts = ");    // shows the voltage measured
+  Serial.print("\t mili volts = ");    // shows the voltage measured
   Serial.print(Voltage,0);
   delay(300);
 
