@@ -20,11 +20,20 @@ double rawSum = 0;
 void displayValues(){
 
 rawSum = analogRead(analogIn);
+analogReadResolution(12);
 
 // ornekleme 
 for (int i = 0; i < 500; i++){         
     rawSum += analogRead(analogIn);
 }
+
+RawValue = rawSum/500;
+Voltage = (RawValue / 4096.0) * 3300;
+Serial.print("Raw Value = " );        // adc value
+Serial.print(RawValue);
+Serial.print("\t milli volts = ");    // shows the voltage measured
+Serial.print(Voltage,0);
+delay(300);
 
 }
 
