@@ -33,7 +33,7 @@ void displayValues(){
   Serial.print("adc value = " );        // adc value
   Serial.print(RawValue);
   Serial.print("\n");
-  Serial.print("mili volts = ");    // shows the voltage measured
+  Serial.print("mvolts = ");    // shows the voltage measured
   Serial.print(Voltage,0);
   Serial.print("\n");
   delay(300);
