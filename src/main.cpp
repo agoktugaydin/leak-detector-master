@@ -17,7 +17,7 @@ Adafruit_SSD1306 display(OLED_RESET);
 // verici cihazdaki struct yapisi ile eslesmeli
 typedef struct struct_message {
     int id; // verici cihaza ait unique id
-    double x;
+    int x;
     int y;
 } struct_message;
 
@@ -50,10 +50,10 @@ void OnDataRecv(const uint8_t * mac_addr, const uint8_t *incomingData, int len) 
 
 // pin and constant value assignees
 const int analogIn = A0;
-double rawValue = 0;
+int rawValue = 0;
 double voltage = 0;
 double rawSum = 0;
-int limit = 1000;
+int limit = 2000;
 
 void displayValues(){
 
