@@ -9,5 +9,19 @@ Slave devices can also be made into a device that miners can wear.
 In this project, the ESP-32 Development Module assumes the roles of communication and signal processing. Combustible gas and CO can be detected with the MQ-9 gas sensor on the device. Thanks to the data continuously transmitted from the slave devices to the master device, it is aimed to control the mine veins instantly and to get a quick reaction in the event of a crisis. 
 
 
+![Structure Diagram](/images/diagram.png)
 
-![Structure Diagram](/images/mainStructure.png)
+## Hardware
+
+- ESP32 Development Module
+- MQ-9 Gas Sensor
+- 64x128 OLED Display
+- Buzzer
+- 3.7V 18650 Li-ion Battery
+
+
+![PCB](/images/pcb.jpg)
+
+
+
+![Master Device](/images/master.jpg)
