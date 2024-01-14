@@ -20,11 +20,6 @@ In this project, the ESP-32 Development Module assumes the roles of communicatio
 - 3.7V 18650 Li-ion Battery
 
 
-![PCB](/images/pcb.jpg)
-
-
-
-![Master Device](/images/master.jpg)
-
+![PCB](/images/pcb.jpg) | ![Master Device](/images/master.jpg)
 
 ![Master and Slave Device](/images/slaveMaster.jpg)
