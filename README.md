@@ -25,3 +25,6 @@ In this project, the ESP-32 Development Module assumes the roles of communicatio
 
 
 ![Master Device](/images/master.jpg)
+
+
+![Master and Slave Device](/images/slaveMaster.jpg)
